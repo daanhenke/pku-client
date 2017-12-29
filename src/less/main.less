@@ -1,0 +1,17 @@
+.resize(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+.maximize {
+    .resize(100%, 100%);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body, html, #container {
+    .maximize;
+}
